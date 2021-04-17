@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'clubbisenes/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'clubbisenes/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'clubbisenes/css/media.css' %}">
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <title>Rosinka</title>
+</head>
+<body>
+    
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">rosinka</a>
+                <nav class="header__nav nav-header" data-da=".mobile__menu, 570 , 1">
+                    <a href="/sound.html" class="nav-header__item _sound">заказ песни</a>
+                    <a href="/test" class="nav-header__item _hookah">заказать кальян</a>
+                    <a href="/test" class="nav-header__item _menu">меню</a>
+                    <a href="login.html" class="nav-header__item _menu">log in</a>                                    
+                </nav>
+                <div class="burger__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mobile__menu"></div>
+            </header>
+            <main class="main">
+                <div class="scene">
+                    <h3 class="scene__title">заголовок</h3>
+                    <p class="scene__subtitle">текст в котором описывается, что это приложение поможет заказать песню или пиво или кальян </p>
+                    <a href="#" class="scene__link"><img src="{% static 'clubbisenes/images/down-arrow-svgrepo-com.svg' %}" alt="arrow_down" class="scene__arrow"></a>
+                </div>
+                <top class="top">
+                    <p class="top__title ">прошедшие песни</p>
+                    <ul class="top__list back">
+                        <li class="back__item"><span>3</span>Mia Boyka & Егор Шип–Наруто</li>
+                        <li class="back__item"><span>10</span>Niletto, Rauf & Faik–Если тебе будет грустно</li>
+                        <li class="back__item"><span>7</span>Женя Белоусов–Девчонка-девчоночка</li>
+                    </ul>
+                    <p class="top__title ">заказанные песни</p>
+                    <ul class="top__list fresh">
+                        <li class="back__item fresh__item"><span>5</span>Женя Белоусов–Девчонка-девчоночка</li>
+                        <li class="back__item fresh__item"><span>2</span>Niletto, Rauf & Faik–Если тебе будет грустно</li>
+                        <li class="back__item fresh__item"><span>14</span>Женя Белоусов–Девчонка-девчоночка</li>
+                    </ul>
+                    <p class="top__subtitle">заказ песни стоит 100руб.</p>
+                    <a href="/sound.html" class="top__btn">заказать песню</a>
+                </top>
+
+
+            </main> 
+        </div>
+
+    <script src="{% static 'clubbisenes/js/dynamicAdapt.js' %}"></script>
+    <script src="{% static 'clubbisenes/js/main.js' %}"></script>
+</body>
+</html>
